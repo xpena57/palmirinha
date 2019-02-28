@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Receitas Palmirinha</title>
+</head>
+<body>
+	<div id="cabecalho">
+		<div id="banner">
+			<!-- Inserir a figura do banner -->
+		</div>
+		<div id="menu">
+			<ul>
+				<li><a href="a">Home</a></li>
+				<li><a href="a">Cadastrar Receitas</a></li>
+				<li><a href="a">Categorias de Receitas</a></li>
+				<li><a href="a">Contato</a></li>
+			</ul>
+		</div>
+		<div id="redessociais">
+			<img src="faceblack2.png">
+			<img src="instablack.png">
+			<img src="twitterblack.png">
+		</div>
+		<p>
+			<input type="search" name="procurar">
+			<input type="image" name="lupa" src="lupa.png .">
+		</p>
+	</div>
+	<div id="corpo">
+		<h3>Nova Receita</h3>
+			<p>
+				<label for="nome">Nome da Receita
+					<input type="text" name="nome" id=nome placeholder="Digite o nome da receita" size="50">
+				</label>
+			</p>
+			<p><label for="foto">Selecione a foto da receita:
+				<input type="file" name="foto" id=foto />
+			</label>
+			</p>
+			<p>
+				<label>
+					<textarea placeholder="Digite uma pequena descrição sobre a receita" cols="50" rows="10"></textarea>
+					
+				</label>
+			</p>
+			<p>
+				<fieldset>
+					<legend>Novo Ingrediente</legend>
+			
+				<p>
+					<label for="qtde">
+						<input type="number" name="qtde" id="qtde" min="1" max="1000">
+					</label>
+				</p>
+				<p>
+					<label for="unidade">Unidade de Medida:
+					<select>
+						<option value="cs">Colher de Sopa</option>
+						<option value="cc">Colher de Cha</option>
+						<option value="x">xicara</option>
+					</select>
+					</label>
+				</p>
+				<p>
+					<label for="descingredientes">Descrição
+						<input type="text" name="descingredientes" size="30" placeholder="Digite o nome do ingrediene">
+						
+					</label>
+				</p>
+			 	<button id="btnAdd">Adicionar Ingredientes</button>
+				</fieldset>
+			</p>
+
+
+
+	</div>
+
+	<div id="rodape">
+		<p>Desenvolvido Por 1TDS3 - FIAP &copy; 2019</p>
+		<div id="redessociais">
+			<img src="faceblack2.png">
+			<img src="instablack.png">
+			<img src="twitterblack.png">
+		</div>
+	</div>
+</body>
+</html>
