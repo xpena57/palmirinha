@@ -27,7 +27,9 @@
 		</p>
 	</div>
 	<div id="corpo">
+		
 		<h3>Nova Receita</h3>
+		<form action="salvar.jsp" method="post"></form>
 			<p>
 				<label for="nome">Nome da Receita
 					<input type="text" name="nome" id=nome placeholder="Digite o nome da receita" size="50">
@@ -70,7 +72,58 @@
 			 	<button id="btnAdd">Adicionar Ingredientes</button>
 				</fieldset>
 			</p>
+			
+			<p>
+				Dificuldade:
+				<input id="facil" type="radio" name="facil" value="F">
+				<label for="Facil">Facil</label>
+				<input id="medio" type="radio" name="medio" value="M">
+				<label for="medio">Medio</label>
+				<input id="dificil" type="radio" name="dificil" value="D">
+				<label for="dificil">Dificil</label>
+			</p>
+			
+			<p>
+				Tempo de preparo: <input type="number" name="tempo-preparo">
+				<select name="unidade-tempo">
+					<option value="min">Minutos</option>
+					<option value="h">Horas</option>
+					<option value="d">Dias</option>
+				</select>				
+			</p>
+			
+			<p>Rendimento: <input type="number" name="Rendimento" min="1" max="100">
+			Porções 
+			</p>
+			<p>
+				Acompanhamentos: <br />
+				<table>
+					<tr>
+						<td>
+							<label>
+								<input type="checkbox" name="acompanhamentos" value="arroz">
+								Arroz
+							</label>
+						</td>
+						<td>
+							<label>
+								<input type="checkbox" name="acompanhamentos" value="feijão">
+								Feijão
+							</label>
+						</td>
+						<td>
+							<label>
+								<input type="checkbox" name="acompanhamentos" value="Fritas">
+								Fritas
 
+							</label>
+						</td>
+					</tr>
+				</table>
+			</p>
+			<p>
+				<input type="submit" value="Salvar Receita">
+			</p>
 
 
 	</div>
